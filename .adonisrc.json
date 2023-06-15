@@ -7,7 +7,7 @@
     "providers": "providers",
     "database": "database",
     "migrations": "database/migrations",
-    "seeds": "database/seeders",        
+    "seeds": "database/seeders",
     "resources": "resources",
     "views": "resources/views",
     "start": "start",
@@ -19,22 +19,12 @@
     {
       "file": "./start/routes",
       "optional": false,
-      "environment": [
-        "web",
-        "console",
-        "test",
-        "repl"
-      ]
+      "environment": ["web", "console", "test", "repl"]
     },
     {
       "file": "./start/kernel",
       "optional": false,
-      "environment": [
-        "web",
-        "console",
-        "test",
-        "repl"
-      ]
+      "environment": ["web", "console", "test", "repl"]
     }
   ],
   "namespaces": {
@@ -75,19 +65,13 @@
     "@adonisjs/view",
     "@adonisjs/shield"
   ],
-  "aceProviders": [
-    "@adonisjs/repl"
-  ],
-  "testProviders": [
-    "@japa/preset-adonis/TestsProvider"
-  ],
+  "aceProviders": ["@adonisjs/repl"],
+  "testProviders": ["@japa/preset-adonis/TestsProvider"],
   "tests": {
     "suites": [
       {
         "name": "functional",
-        "files": [
-          "tests/functional/**/*.spec(.ts|.js)"
-        ],
+        "files": ["tests/functional/**/*.spec(.ts|.js)"],
         "timeout": 60000
       }
     ],
@@ -108,10 +92,7 @@
       "Database": "database",
       "Contracts": "contracts"
     },
-    "preloads": [
-      "./start/routes",
-      "./start/kernel"
-    ],
+    "preloads": ["./start/routes", "./start/kernel"],
     "providers": [
       "./providers/AppProvider",
       "@adonisjs/core",
@@ -129,22 +110,16 @@
         "reloadServer": false
       }
     ],
-    "aceProviders": [
-      "@adonisjs/repl"
-    ],
+    "aceProviders": ["@adonisjs/repl"],
     "tests": {
       "suites": [
         {
           "name": "functional",
-          "files": [
-            "tests/functional/**/*.spec(.ts|.js)"
-          ],
+          "files": ["tests/functional/**/*.spec(.ts|.js)"],
           "timeout": 60000
         }
       ]
     },
-    "testProviders": [
-      "@japa/preset-adonis/TestsProvider"
-    ]
+    "testProviders": ["@japa/preset-adonis/TestsProvider"]
   }
 }
